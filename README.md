@@ -1,41 +1,32 @@
-# DNS-AUTO-Switch
+**finalshell备份**
 
-自动检测服务器故障，并自动使用API修改并切换DNS解析，支持华为云DNS和CloudFlareDNS
+激活
 
-Automatically detect server failures, and automatically use API to modify and switch DNS resolution, support Huawei Cloud DNS and CloudFlareDNS
+机器码获取
+随便输入账号密码，然后选择离线激活即可获得机器码。
 
-## 关联作品
+防止二次打开提示激活
 
-https://github.com/yxkumad/dns_lb
+Windows下hosts文件位置
 
-https://github.com/TorchPing/go-torch
+windows 用户hosts文件是在“c:\windows\system32\drivers\etc，注意这个文件一定是在系统盘，如果你的系统在D盘请自行修改前面的盘符
 
-https://github.com/yulewang/cloudflare-api-v4-ddns
+快速进入hosts文件夹的方法。同时按下Win+R组合键，调出运行栏，输入 c:\windows\system32\drivers\etc 点击确定就可以找到hosts文件了。
 
-https://github.com/lllvcs/huaweicloud_ddns
+修改本机hosts文件，将下面地址指向127.0.0.1
 
-# 如何使用
+127.0.0.1 www.youtusoft.com
+127.0.0.1 youtusoft.com
+127.0.0.1 hostbuf.com
+127.0.0.1 www.hostbuf.com
+127.0.0.1 dkys.org
+127.0.0.1 tcpspeed.com
+127.0.0.1 www.wn1998.com
+127.0.0.1 wn1998.com
+127.0.0.1 pwlt.wn1998.com
+127.0.0.1 backup.www.hostbuf.com
 
-我TM，2021了还有人不知道SH怎么用？
+然后使用cmd或者Windows终端执行以下命令查看hosts是否生效
 
-对应路径bash xxx.sh 或者./xxx.sh
-
-# 如何配置
-
-请阅读博客介绍文档
-
-https://www.blueskyxn.com/202102/4210.html
-
-# 如何安装
-
-我TM，SH单文件脚本而已，还不会？
-
-如果不会curl，wget，那我求你用宝塔面板上传行不行
-
-不用宝塔还不会的沙雕，别TM不懂装懂行不行，像个小丑
-
-【别忘记装GO-torch，帮你改名go一起塞进仓库了】
-
-
-
-
+ping dkys.org
+返回地址127.0.0.1即可
